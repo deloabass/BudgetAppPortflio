@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Budget App</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  </head>
+  <body>
+    <div class="container-fluid mt-3">
+      <div class="alert alert-info" role="alert">
+        <h4 class="alert-heading">Notification</h4>
+        <p class="alert-body"></p>
+      </div>
+
+      <div class="row">
+        <div class="col-md-6 mb-4">
+          <div class="card">
+            <div class="card-body">
+              <h4 class="card-title">Expense Tracker</h4>
+              <button class="btn btn-danger btn-sm float-right reset_Button">Reset value</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-6 mb-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Please Enter Your Budget</h5>
+              <!-- <p class="text-danger notification">Votre budget n'a pas été ajouté, veuillez réessayer.</p> -->
+              <div class="form-group">
+                <label for="budget">Budget</label>
+                <input type="number" class="form-control shadown-none input_un" id="budget" />
+              </div>
+              <button class="btn btn-primary calcule">Calculate</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 mb-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Add Expense</h5>
+              <div class="form-group">
+                <label for="expense-title">Expense Title</label>
+                <input type="text" class="form-control input_deux" id="expense-title" />
+              </div>
+              <div class="form-group">
+                <label for="expense-amount">Expense Amount</label>
+                <input type="number" class="form-control input_trois" id="expense-amount" />
+              </div>
+              <button class="btn btn-success add_expense">Add Expense</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <div class="card text-center">
+            <div class="card-body">
+              <h5 class="card-title">BUDGET</h5>
+              <p class="card-text text-success vert">0 F</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card text-center">
+            <div class="card-body">
+              <h5 class="card-title">EXPENSE</h5>
+              <p class="card-text text-danger rouge">0 F</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card text-center">
+            <div class="card-body">
+              <h5 class="card-title">BALANCE</h5>
+              <p class="card-text text-primary verte">0 F</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="cardTable">
+        <div class="row">
+          <div class="col-md-6 mb-4">
+            <div class="card card-height">
+              <div class="card-body" style="overflow-x: scroll; max-height: 30vh;" >
+                <h5 class="card-title">History</h5>
+                <table class="table table-bordered ">
+                  <thead>
+                    <tr>
+                      <th>#</th>
+                      <th>Expense Title</th>
+                      <th>Expense Amount</th>
+                      <th>Actions</th>
+                    </tr>
+                  </thead>
+                  <tbody id="tbody_history">
+                    <!-- Expense history will be added here dynamically -->
+                    <tr>
+                      <td>1</td>
+                      <td>Sample Expense</td>
+                      <td>100 F</td>
+                      <td class="center">
+                        <strong class="setting_icon">
+                          <i class="fa-solid fa-pen-to-square edity"></i>
+                          <i class="fa-solid fa-trash delete_icon"></i>
+                        </strong>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-5 col-sm-12">
+            <canvas id="myChart" style="max-height: 30vh;"></canvas>
+          </div>
+        </div>
+      </div>
+      
+
+     
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="./budjet.js"></script>
+  </body>
+</html>

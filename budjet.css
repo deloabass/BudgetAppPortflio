@@ -1,0 +1,418 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(242, 235, 235);
+}
+.container-fluid{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    height: 100vh;
+}
+#myChart{
+    width: 100%;
+    height: 100%;
+    border: solid #8c8282 12px;
+
+}
+.notification{
+    position: fixed;
+    right: 10px;
+    top: 10px;
+}
+/* =================partie un=================== */
+.row{
+    width: 50%;
+    margin: 5px;
+}
+.container_un{
+    display: flex;
+    margin: 10px;
+}
+.reset_Button{
+    margin: 12px;
+    padding: 10px 20px 10px;
+    margin-left: auto;
+    border: none;
+    outline: none;
+    border: solid 3px orange;
+    cursor: pointer;
+}
+.reset_Button:hover{
+    background-color: orange;
+}
+.expense{
+    display: flex;
+    margin-top: 10px;
+}
+.containu_deux{
+    width: 650px;
+    height: 150px;
+    border: solid 3px rgb(58, 196, 125);
+    margin-top: 20px;
+    border-radius: 6px;
+}
+/* -------------input=============== */
+.number_input{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.para{
+    padding: 10px;
+}
+.number_input input {
+    width: 39.688rem;
+    height: 40px;
+    margin-top: 6px;
+    border: none;
+    outline: none;
+    border: solid 2px rgb(58, 196, 125);
+    border-radius: 3px;
+    background-color: rgb(255, 255, 255);
+    font-size: 12px;
+}
+.calcule{
+    padding: 10px 2px 11px 3px;
+    width: 130px;
+    margin-top: 7px;
+    margin-left: 7px;
+    border: none;
+    border: solid 2px rgb(58, 196, 125);
+    border-radius: 3px;
+    color: rgb(58, 196, 125);
+    cursor: pointer;
+}
+.calcule:hover{
+    background-color: rgb(58, 196, 125);
+    color: #fff;
+}
+/* ===========================colone rouge=========== */
+.containu_trois {
+    width: 650px;
+    height: 227px;
+    border: solid 3px red;
+    margin-top: 20px;
+    border-radius: 6px;
+}
+.text_input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.text_input input {
+    width: 39.688rem;
+    height: 40px;
+    margin-top: 6px;
+    border: none;
+    outline: none;
+    border: solid 2px red;
+    border-radius: 3px;
+    background-color: rgb(255, 255, 255);
+}
+.numberDeux_input{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.numberDeux_input input {
+    width: 39.688rem;
+    height: 40px;
+    margin-top: 6px;
+    border: none;
+    outline: none;
+    border: solid 2px red;
+    border-radius: 3px;
+    background-color: rgb(255, 255, 255);
+}
+.add_expense {
+    padding: 10px 2px 11px 3px;
+    width: 130px;
+    margin-top: 7px;
+    margin-left: 7px;
+    border: none;
+    border: solid 2px red;
+    border-radius: 3px;
+    color: red;
+    cursor: pointer;
+}
+.add_expense:hover {
+    background-color: red;
+    color: #fff;
+}
+/* ===================partieDeux================== */
+.conte_un{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 32px;
+}
+.BUDJET{
+    margin-right: auto;
+    text-align: center;
+
+}
+.BALANCE {
+    margin-left: auto;
+    text-align: center;
+}
+.EXPENCE {
+    text-align: center;
+    justify-content: center;
+
+}
+.vert{
+    color: rgb(58, 196, 125);
+    font-size: 30px;
+}
+.verte{
+    color: rgb(58, 196, 125);
+    font-size: 30px;
+}
+
+.rouge{
+    color: red;
+    font-size: 30px;
+}
+
+svg{
+    font-size: 40px;
+}
+path{
+    fill: rgb(9, 97, 126);
+}
+/* =======================partie 3==================== */
+.card-fin{
+    display: flex;
+    justify-content: center;
+}
+hr{
+    margin: auto;
+    width: 70%;
+}
+
+.border{
+ display: none;
+ }
+.card_none{
+    border: solid rgb(9, 97, 126);
+    height: 75px;
+    width: 30rem;
+    text-align: center;
+ 
+}
+.ajout{
+    background-color: rgb(9, 97, 126);
+    color: #fff;
+    height: 30px;
+}
+.votre{
+    font-size: 17px;
+    font-weight: 500;
+    bottom: 12px;
+}
+.votreRouge {
+    font-size: 17px;
+    font-weight: 500;
+    bottom: 12px;
+}
+.notificationRouge{
+    background-color: red !important;
+    color: #fff;
+    height: 30px;
+
+}
+.card_nonerouge {
+    border: solid rgb(215, 7, 7);
+    height: 75px;
+    width: 30rem;
+    text-align: center;
+
+}
+
+
+.red {
+    font-size: 17px;
+    font-weight: 500;
+    bottom: 12px;
+}
+.border_un {
+    display: none;
+}
+/* ====================table================= */
+.contain_deux{
+display: flex;
+    justify-content: center;
+    margin: auto;
+}
+.setting_icon{
+    color: rgb(9, 97, 126);
+    font-size: 24px;
+    cursor: pointer;
+}
+.BUDJETE {
+    margin-right: auto;
+    text-align: center;
+
+}
+
+.BALANCEE {
+    margin-left: auto;
+    text-align: center;
+}
+
+.EXPENCEE {
+    text-align: center;
+    justify-content: center;
+
+}
+.delete_icon{
+    color: red;
+    cursor: pointer;
+    font-size: 20px;
+    margin: 15px;
+   
+}
+.center{
+    display: grid;
+    justify-content: center !important;
+    align-items: center;
+}
+.BALANCEE{
+    color: rgb(110, 212, 236);
+    cursor: pointer;
+}
+.tableau,
+table{
+    width: 100%;
+    height: auto;
+    border: solid red 3px;
+    
+}
+tr{
+    border: solid 2px red;
+}
+.conte_une {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 32px;
+}
+.tableau td tr{
+    width: auto;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    
+}
+.ligne{
+    width: 306%;
+    height: 2px;
+    background-color: aqua;
+}
+
+b{
+    width: 60%;
+    height: 30px;
+    border: solid 1px #8c8282;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    color: #8c8282;
+    font-size: 17px;
+    cursor: pointer;
+    letter-spacing: 0.10px;
+
+}
+b:hover{
+    background-color: #8c8282;
+    color: #fff;
+}
+@media screen and (width:1024px) {
+    .container-fluid{
+       display: flex;
+    }
+    .row{
+        width: 103%;
+        margin: 0;
+    }
+    .containu_deux{
+        width: 100%;
+    }
+    .number_input input {
+        width: 48.299rem;
+}
+.containu_trois {
+    width: 100%;
+   
+}
+.text_input input {
+    width: 48.299rem;
+}
+.numberDeux_input input {
+    width: 48.299rem;
+}
+}
+@media screen and (width:768px) {
+    .container-fluid{
+       flex-direction: column;
+    }
+    .row{
+        width: 103%;
+        margin: 0;
+    }
+    .containu_deux{
+        width: 100%;
+    }
+    .number_input input {
+        width: 48.299rem;
+}
+.containu_trois {
+    width: 100%;
+   
+}
+.text_input input {
+    width: 48.299rem;
+}
+.numberDeux_input input {
+    width: 48.299rem;
+}
+}
+.card-height {
+    height: 10vh !important;
+    border: solid black 2px;
+  }
+  canvas{
+    border: solid black 2px;
+    width: 20px;
+    height: 20px;
+  }
+  
+
+
+
+  
+  
+@media screen and (width:425px) {
+    .container-fluid{
+       flex-direction: column;
+    }
+    .row{
+        width: 153%;
+        margin: 0;
+    }
+}
+
+@media screen and (width:375px) {
+    .container-fluid{
+       flex-direction: column;
+    }
+    .row{
+        width: 173%;
+        margin: 0;
+    }
+}
+
+
